@@ -1,0 +1,88 @@
+.about-us {
+  height: 844px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    height: 564px;
+
+  }
+
+  &-info {
+    width: 445px;
+
+    &__about {
+      font-family: Lato, serif;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 33px;
+      color: #BDBDBD;
+    }
+
+    &__name {
+      margin-top: 40px;
+      font-family: Merriweather, serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 69px;
+      color: #333333;
+
+      p {
+        color: #005FA3;
+      }
+    }
+
+    &__text {
+      margin-top: 60px;
+      font-family: Lato, serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+    }
+  }
+
+  &-content {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    &-item {
+      width: 255px;
+      height: 255px;
+      background: #EBEBEB;
+
+      p {
+        margin: 30px 108px 0 40px;
+        font-family: Lato, serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+      }
+
+      &__count {
+        margin: 30px 0 0 40px;
+        font-family: Lato, serif;
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 66px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      &__case {
+        font-family: Lato, serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        display: inline-block;
+        margin: 27px 0 40px 40px;
+        text-decoration: underline;
+        color: #005FA3;
+      }
+    }
+  }
+}

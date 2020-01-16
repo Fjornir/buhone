@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "indent": ["error", 4],
+    "no-param-reassign": 0,
+    "max-nested-callbacks": ["error", 2],
+    "complexity": ["error", 5],
+    "curly": ["error", "all"],
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.footer {
+  height: 623px;
+  background: url("../static/img/footer-pic.svg") center/contain no-repeat;
+
+  &-content {
+    margin-top: 122px;
+    display: flex;
+    justify-content: space-between;
+
+    &-info {
+      width: 460px;
+
+      &__name {
+        font-family: Merriweather, serif;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #FFFFFF;
+      }
+
+      &__about {
+        margin-top: 60px;
+        font-family: Lato, serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+      }
+
+      &-contacts {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+          font-family: Lato, serif;
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 29px;
+          color: #FFFFFF;
+          position: relative;
+
+          &:before {
+            top: 0;
+            left: 0;
+            content: "";
+            position: absolute;
+          }
+
+          &--phone {
+            padding-left: 35px;
+
+            &:before {
+              height: 30px;
+              width: 18px;
+              background: url("../static/img/footer-phone.svg") left/contain no-repeat;
+            }
+          }
+
+          &--mail {
+            padding-left: 55px;
+
+            &:before {
+              height: 30px;
+              width: 40px;
+              background: url("../static/img/footer-mail.svg") left/contain no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    &-letter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 540px;
+      height: 50px;
+
+      &-item {
+
+        &__name {
+          font-family: Lato, serif;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #FFFFFF;
+          margin-bottom: 15px;
+        }
+
+        &__first-name {
+          width: 255px;
+          background-color: transparent;
+          font-family: Lato, serif;
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 29px;
+          color: #BDBDBD;
+          border-color: transparent transparent #BDBDBD transparent;
+        }
+
+        &__second-name {
+          width: 255px;
+          background-color: transparent;
+          font-family: Lato, serif;
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 29px;
+          color: #BDBDBD;
+          border-color: transparent transparent #BDBDBD transparent;
+        }
+
+        &__message {
+          width: 540px;
+          background-color: transparent;
+          font-family: Lato, serif;
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 29px;
+          color: #BDBDBD;
+          border-color: transparent transparent #BDBDBD transparent;
+        }
+      }
+
+      &__button {
+        margin-top: 70px;
+        margin-left: 315px;
+        padding: 19px 18px;
+        display: inline-block;
+        background: #005FA3;
+        font-family: Lato, serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

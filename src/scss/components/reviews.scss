@@ -1,0 +1,151 @@
+.reviews {
+  height: 900px;
+
+  &-slider {
+
+    &-content {
+      &__name {
+        margin-top: 140px;
+        font-family: Lato, serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 33px;
+        color: #BDBDBD;
+      }
+
+      &__about {
+        margin-top: 40px;
+        font-family: Merriweather, serif;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #333333;
+      }
+
+      &-clients {
+        margin-top: 80px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 95px;
+        justify-content: space-between;
+        background: #EBEBEB;
+
+        &__review {
+          font-family: Lato, serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+
+        &-profile {
+          height: 80px;
+          display: flex;
+
+          &__photo {
+            width: 80px;
+            height: 80px;
+            background: url("../static/img/reviews-photo.svg") center/contain no-repeat;
+          }
+
+          &__name {
+            margin-top: 20px;
+            margin-left: 35px;
+            font-family: Lato, serif;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000;
+          }
+
+          &__org {
+            margin-top: 5px;
+            font-family: Lato, serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            color: #4F4F4F;
+          }
+        }
+
+        &__client {
+          width: 255px;
+          height: 130px;
+          background: url("../static/img/our-clients-clients.svg") center/contain no-repeat;
+        }
+      }
+    }
+
+    &-controls {
+      display: flex;
+      justify-content: space-between;
+
+      &-dots {
+
+        &__circle {
+          border-radius: 1em;
+          margin-top: 100px;
+          margin-right: 40px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          transition: 0.2s;
+          background: #005FA3;
+          opacity: 0.4;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            background: #005FA3;
+            opacity: 1;
+          }
+        }
+      }
+
+      &-nav {
+        font-size: 0;
+        margin-top: 50px;
+
+        &__button {
+          position: relative;
+          display: inline-block;
+          padding: 30px;
+          background: #005FA320;
+          font-size: 14px;
+          transition: 0.2s;
+
+          &:hover {
+            background: #005FA3;
+            opacity: 1;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            top: calc(50% - 8px);
+            left: calc(50% - 4px);
+
+          }
+
+          &--prev {
+            &:before{
+              background: url("../static/img/header-prev.svg") center/contain no-repeat;
+            }
+          }
+
+          &--next {
+            &:before{
+              background: url("../static/img/header-next.svg") center/contain no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

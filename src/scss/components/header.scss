@@ -1,0 +1,203 @@
+
+.header {
+  outline: 1px solid red;
+
+  &-navbar {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+
+      &__name {
+        margin-left: 30px;
+        font-family: Merriweather, serif;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        color: #005FA3;
+      }
+    }
+
+    &-contacts {
+      margin-top: 22px;
+
+      &__item {
+        font-size: 13px;
+        line-height: 17px;
+        margin-right: 40px;
+        position: relative;
+        padding-left: 27px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:before {
+          top: 0;
+          left: 0;
+          content: "";
+          position: absolute;
+        }
+
+        &--phone {
+          &:before {
+            height: 17px;
+            width: 10px;
+            background: url("../static/img/header-phone.svg") left/contain no-repeat;
+          }
+        }
+
+        &--mail {
+          &:before {
+            height: 17px;
+            width: 22px;
+            background: url("../static/img/header-mail.svg") left/contain no-repeat;
+          }
+        }
+
+        &--clock {
+          &:before {
+            height: 17px;
+            width: 17px;
+            background: url("../static/img/header-clock.svg") left/contain no-repeat;
+          }
+        }
+
+        &--pointer {
+          &:before {
+            height: 17px;
+            width: 14px;
+            background: url("../static/img/header-pointer.svg") left/contain no-repeat;
+          }
+        }
+      }
+    }
+
+    &-menu {
+      margin-top: 22px;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        font-family: Lato, serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+
+  &-slider {
+
+    height: 670px;
+    background: url("../static/firstScreenImg.png") center/contain no-repeat;
+
+    &-content {
+      &__name {
+        height: 117px;
+        width: 589px;
+        padding-top: 170px;
+        font-family: Merriweather, serif;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 66px;
+        color: #FFFFFF;
+      }
+
+      &__button {
+        display: inline-block;
+        padding: 17.5px 57px 17.5px 57px;
+        margin-top: 200px;
+        background: #005FA3;
+        font-family: Lato, serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        transition: 0.2s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.56);
+        }
+      }
+    }
+
+    &-controls {
+      display: flex;
+      justify-content: space-between;
+
+      &-dots {
+
+        &__circle {
+          border-radius: 1em;
+          margin-top: 120px;
+          margin-right: 40px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          transition: 0.2s;
+          background: #FFFFFF;
+          opacity: 0.4;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            background: #FFFFFF;
+            opacity: 1;
+          }
+        }
+      }
+
+      &-nav {
+
+        font-size: 0;
+        margin-top: 70px;
+
+        &__button {
+          position: relative;
+          display: inline-block;
+          padding: 30px;
+          background: #FFFFFF20;
+          font-size: 14px;
+          transition: 0.2s;
+
+          &:hover {
+            background: black;
+            opacity: 0.4;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            top: calc(50% - 8px);
+            left: calc(50% - 4px);
+
+          }
+
+          &--prev {
+            &:before{
+              background: url("../static/img/header-prev.svg") center/contain no-repeat;
+            }
+          }
+
+          &--next {
+            &:before{
+              background: url("../static/img/header-next.svg") center/contain no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

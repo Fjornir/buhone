@@ -1,0 +1,109 @@
+.our-clients {
+  height: 630px;
+  background: #EBEBEB;
+
+  &-slider {
+
+    &-content {
+      &__name {
+        margin-top: 100px;
+        font-family: Lato, serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 33px;
+        color: #BDBDBD;
+      }
+
+      &__about {
+        margin-top: 40px;
+        font-family: Merriweather, serif;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #333333;
+      }
+
+      &-clients {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        &__client {
+          width: 255px;
+          height: 130px;
+          background: url("../static/img/our-clients-clients.svg") center/contain no-repeat;
+        }
+      }
+    }
+
+    &-controls {
+      display: flex;
+      justify-content: space-between;
+
+      &-dots {
+
+        &__circle {
+          border-radius: 1em;
+          margin-top: 100px;
+          margin-right: 40px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          transition: 0.2s;
+          background: #005FA3;
+          opacity: 0.4;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            background: #005FA3;
+            opacity: 1;
+          }
+        }
+      }
+
+      &-nav {
+        font-size: 0;
+        margin-top: 50px;
+
+        &__button {
+          position: relative;
+          display: inline-block;
+          padding: 30px;
+          background: #005FA320;
+          font-size: 14px;
+          transition: 0.2s;
+
+          &:hover {
+            background: #005FA3;
+            opacity: 1;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            top: calc(50% - 8px);
+            left: calc(50% - 4px);
+
+          }
+
+          &--prev {
+            &:before{
+              background: url("../static/img/header-prev.svg") center/contain no-repeat;
+            }
+          }
+
+          &--next {
+            &:before{
+              background: url("../static/img/header-next.svg") center/contain no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: $font-links;
+  transition: 0.2s;
+
+  &:hover {
+    color: #005FA3;
+  }
+}
+
+.wrapper {
+  width: 1116px;
+  Margin: 0 auto;
+}
+
